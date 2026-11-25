@@ -1,37 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Shop</title>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script defer src="./js/products.js"></script>
     <script defer src="./js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-  <h1 class="logo">JS Shop</h1>
-  <p>Cart: <span class="cart-count">0</span></p>
-</header>
+      <div class="header-content">
+        <h1 class="logo"><span aria-hidden="true">JS</span>JS Shop</h1>
+        <a class="header-cart" href="#shopping-cart">
+          <img src="./img/cart.svg" alt="" width="24" height="24" />Cart
+        </a>
+      </div>
+    </header>
 
-<main>
-  <section class="catalog-section">
-    <h2>Products</h2>
+    <main>
+      <section class="catalog-section">
+        <h2>Products</h2>
+        <p class="catalog-caption">Explore our smartphone collection</p>
 
-    <ul class="products"></ul>
-  </section>
+        <ul class="products"></ul>
+      </section>
 
-  <section class="cart-section">
-    <h2>Shopping Cart</h2>
+      <section class="cart-section" id="shopping-cart">
+        <h2>Shopping Cart</h2>
 
-    <ul class="cart"></ul>
+        <ul class="cart"></ul>
+        <p class="cart-empty">Your cart is empty.</p>
 
-    <p>Total: $<span class="total-price">0</span></p>
-  </section>
-</main>
-
-</body>
+        <p class="cart-total" aria-live="polite">
+          <span>Total</span>
+          <strong>$<span class="total-price">0</span></strong>
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

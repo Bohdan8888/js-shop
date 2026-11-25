@@ -1,0 +1,51 @@
+.header {
+  background: #fff;
+}
+
+.header-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 18px 16px;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.logo span {
+  display: inline-block;
+  width: 36px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.header-cart {
+  float: right;
+  min-width: 86px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.header-cart img {
+  float: left;
+  margin: 6px 8px 0 0;
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    padding: 18px 48px;
+  }
+}
