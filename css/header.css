@@ -43,6 +43,31 @@
   float: left;
   margin: 6px 8px 0 0;
 }
+.search-item.active {
+  background-color: #e2e8f0;
+  cursor: pointer;
+}
+.input-contain {
+position: relative;
+
+}
+
+.search-results {
+position: absolute;
+background-color: #f5f7fa;;
+display: flex;
+flex-direction: column;
+gap: 10px; 
+border-radius: 20px;
+}
+.search-item{
+  display: flex;
+  flex-direction: column;
+padding: 8px;
+  border-radius: 10px;
+
+  background-color: #fff;
+}
 
 @media (min-width: 768px) {
   .header-content {

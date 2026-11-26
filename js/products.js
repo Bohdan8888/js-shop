@@ -64,24 +64,7 @@ const cerateElementItem = document.querySelector(".products");
 const totalPrice = document.querySelector(".total-price");
 const cartNew = document.querySelector(".cart");
 
-const mapElement = products
-  .map((product) => {
-    return `
-      <li class="product-item">
-        <img src="${product.image}" alt="${product.name}"/>
-        <p>Name: ${product.name}</p>
-        <p>Description: ${product.description}</p>
-        <p>Price: ${product.price}</p>
-        <p>Stock: ${product.stock}</p>
-        <button class="add-btn" type="button" data-id="${product.id}">
-          Add to Cart
-        </button>
-      </li>
-    `;
-  })
-  .join("");
 
-cerateElementItem.insertAdjacentHTML("beforeend", mapElement);
 
 let cart = [];
 
