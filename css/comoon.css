@@ -28,7 +28,14 @@ h6,
 p {
   margin: 0;
 }
+input,
+button {
+  vertical-align: middle;
+}
 
+.product-search {
+  display: block;
+}
 .products,
 .cart {
   margin: 0;

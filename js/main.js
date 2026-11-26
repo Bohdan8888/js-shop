@@ -51,8 +51,7 @@ function renderSearchResults(items) {
       return `
         <li class="search-item" data-id="${item.id}">
           <img src="${item.image}" alt="${item.name}"/>
-          <p>Name: ${item.name}</p>
-          <p>Price: ${item.price}</p>
+          <p>${item.name}</p>
         </li>
       `;
     })
